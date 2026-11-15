@@ -6,7 +6,17 @@
 
 A digital game store and library built with Flask and Supabase (PostgreSQL). Browse a catalog of 90 games, buy or add free games to your library, and leave reviews for the games you own.
 
+![GameVault home page with a featured game carousel and rows of games](docs/screenshots/home.webp)
+
 > **New to open source? Start here.** You can add a game to GameVault in about five minutes, straight from your browser. You don't need to install anything, set up a database or know Python. [See how ↓](#your-first-contribution-no-setup)
+
+## Screenshots
+
+| Store | Game page |
+|---|---|
+| ![Store with genre filters, search, price filter and sorting](docs/screenshots/store.webp) | ![Elden Ring game page with description, buy button and game information](docs/screenshots/game.webp) |
+
+![The home page, store and a game page on a phone](docs/screenshots/mobile.webp)
 
 ## Features
 

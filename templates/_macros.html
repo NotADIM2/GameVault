@@ -5,7 +5,8 @@
    data-price="{{ game.price }}"
    data-rating="{{ game.avg_rating or 0 }}"
    data-owners="{{ game.owner_count }}"
-   data-released="{{ game.release_date or '' }}">
+   data-released="{{ game.release_date or '' }}"
+   {% if not game.image_url.startswith('https://') %}data-no-art{% endif %}>
     <div class="game-card-media">
         <img src="{{ game.image_url }}" alt="" loading="lazy">
         {% if owned %}<span class="badge">In library</span>{% endif %}
