@@ -94,6 +94,71 @@ static/                CSS, JavaScript and images
 
 The Flask server is the only client of the database. Row Level Security is enabled with no policies, so the public anon key can read and write nothing.
 
+```mermaid
+erDiagram
+    developer |o--o{ game : makes
+    game ||--o{ have : "is tagged"
+    genre ||--o{ have : tags
+    users ||--o{ library : owns
+    game ||--o{ library : "is owned in"
+    library ||--o| plays : "tracks playtime"
+    library ||--o| review : "allows review"
+    users ||--o{ review : writes
+    game ||--o{ review : receives
+
+    developer {
+        bigint developer_id PK
+        text name UK
+        text country
+    }
+    game {
+        bigint game_id PK
+        text title
+        bigint developer_id FK
+        integer price
+        date release_date
+        text description
+        text image_url
+    }
+    genre {
+        bigint genre_id PK
+        text name UK
+    }
+    have {
+        bigint game_id PK, FK
+        bigint genre_id PK, FK
+        boolean is_primary
+    }
+    users {
+        bigint id PK
+        text username
+        text email UK
+        text password_hash
+        timestamptz created_at
+    }
+    library {
+        bigint user_id PK, FK
+        bigint game_id PK, FK
+        timestamptz purchase_date
+        integer price_paid
+    }
+    plays {
+        bigint user_id PK, FK
+        bigint game_id PK, FK
+        numeric hours
+        timestamptz last_played
+    }
+    review {
+        bigint review_id PK
+        bigint user_id FK
+        bigint game_id FK
+        smallint rating
+        text body
+        timestamptz created_at
+        timestamptz updated_at
+    }
+```
+
 ## Development
 
 ```bash
