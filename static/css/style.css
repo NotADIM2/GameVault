@@ -629,6 +629,13 @@ textarea.input{
     font-size:24px;
 }
 
+.empty-state-actions{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+}
+
 /* STORE PAGE */
 
 .store-layout{
@@ -791,11 +798,15 @@ textarea.input{
     align-items:start;
 }
 
+/* Bleeds to the edges of the info card it sits in */
 .game-cover{
-    width:100%;
-    border:1px solid var(--border);
-    border-radius:var(--radius-lg);
-    box-shadow:var(--shadow);
+    display:block;
+    width:calc(100% + 48px);
+    max-width:none;
+    margin:-24px -24px 22px;
+    aspect-ratio:460 / 215;
+    object-fit:cover;
+    border-radius:calc(var(--radius-lg) - 1px) calc(var(--radius-lg) - 1px) 0 0;
 }
 
 .info-card,
@@ -972,11 +983,83 @@ dd{
     font-size:14px;
 }
 
+.auth-box .auth-note{
+    margin:0 0 22px;
+    padding:10px 14px;
+    border:1px solid var(--border);
+    border-radius:12px;
+    background:var(--surface);
+    color:var(--muted);
+    font-size:13px;
+}
+
 .auth-footer{
     margin-top:22px;
     color:var(--muted);
     text-align:center;
     font-size:14px;
+}
+
+/* FOOTER */
+
+/* Keeps the footer at the bottom of the window on short pages */
+main{
+    min-height:calc(100vh - var(--nav-height));
+}
+
+.site-footer{
+    border-top:1px solid var(--border);
+    background:rgba(2,4,10,0.6);
+}
+
+.site-footer-inner{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:24px 48px;
+    width:100%;
+    max-width:var(--page-width);
+    margin:0 auto;
+    padding:36px var(--gutter) 20px;
+}
+
+.site-footer-about{
+    max-width:460px;
+}
+
+.site-footer-about .logo{
+    font-size:20px;
+}
+
+.site-footer-about p{
+    margin-top:8px;
+    color:var(--muted);
+    font-size:14px;
+}
+
+.site-footer-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px 28px;
+}
+
+.site-footer-links a{
+    color:var(--text-soft);
+    font-size:14px;
+    font-weight:500;
+}
+
+.site-footer-links a:hover{
+    color:var(--accent);
+}
+
+.site-footer-note{
+    max-width:var(--page-width);
+    margin:0 auto;
+    padding:0 var(--gutter) 28px;
+    color:var(--muted);
+    font-size:12px;
 }
 
 /* LIBRARY PAGE */
@@ -1243,8 +1326,10 @@ dd{
         border-color:var(--accent);
     }
 
+    /* Details and cover come before the reviews on narrow screens */
     .info-card{
         position:static;
+        order:-1;
     }
 
     .library-panels{

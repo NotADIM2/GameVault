@@ -50,6 +50,21 @@
     <main id="main">
         {% block content %}{% endblock %}
     </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <div class="site-footer-about">
+                <a class="logo" href="{{ url_for('main.home') }}">GAMEVAULT</a>
+                <p>A demo game store built with Flask and PostgreSQL. Purchases are simulated: no real payments are taken.</p>
+            </div>
+            <nav class="site-footer-links" aria-label="Project">
+                <a href="{{ config.REPO_URL }}">Source on GitHub</a>
+                <a href="{{ config.REPO_URL }}/blob/main/CONTRIBUTING.md">Contribute</a>
+                <a href="{{ config.REPO_URL }}/issues/new/choose">Report a bug</a>
+            </nav>
+        </div>
+        <p class="site-footer-note">Open source under the MIT licence. Game names and artwork belong to their respective owners.</p>
+    </footer>
 </body>
 
 </html>

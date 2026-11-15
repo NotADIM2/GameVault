@@ -1,14 +1,31 @@
 {% extends "base.html" %}
 
-{% block title %}{{ error.name if error else 'Something went wrong' }} | GameVault{% endblock %}
+{# Friendlier wording than the framework's defaults. Errors raised with their own description
+   (such as the expired-session message) keep it. #}
+{% set code = error.code if error else 500 %}
+{% set messages = {
+    400: ("That didn't work", "Something about that request wasn't right. Go back and try again."),
+    404: ("Page not found", "We couldn't find that page. It may have moved, or the link might be mistyped."),
+    405: ("That didn't work", "This page can't be used that way. Go back and try again."),
+    500: ("Something went wrong", "We couldn't load this page. Please try again in a moment."),
+} %}
+{% set default_title, default_text = messages.get(code, (error.name if error else 'Something went wrong', '')) %}
+{% set is_custom = error and error.description and error.description != error.__class__.description %}
+{% set heading = default_title %}
+{% set text = error.description if is_custom or not default_text else default_text %}
+
+{% block title %}{{ heading }} | GameVault{% endblock %}
 
 {% block content %}
 <div class="page">
     <div class="empty-state">
-        <span class="eyebrow">Error {{ error.code if error else 500 }}</span>
-        <h2>{{ error.name if error else 'Something went wrong' }}</h2>
-        <p>{{ error.description if error else 'We could not load this page. Please try again in a moment.' }}</p>
-        <a class="btn btn-primary" href="{{ url_for('main.home') }}">Back to home</a>
+        <span class="eyebrow">Error {{ code }}</span>
+        <h2>{{ heading }}</h2>
+        <p>{{ text }}</p>
+        <div class="empty-state-actions">
+            <a class="btn btn-primary" href="{{ url_for('main.store') }}">Browse the store</a>
+            <a class="btn btn-ghost" href="{{ url_for('main.home') }}">Back to home</a>
+        </div>
     </div>
 </div>
 {% endblock %}

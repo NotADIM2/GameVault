@@ -67,6 +67,7 @@ def create_app():
         SESSION_COOKIE_HTTPONLY=True,
         SESSION_COOKIE_SAMESITE="Lax",
         SESSION_COOKIE_SECURE=os.environ.get("SESSION_COOKIE_SECURE") == "1",
+        REPO_URL="https://github.com/NotADIM2/GameVault",  # linked from the footer
     )
     logging.basicConfig(level=logging.INFO)
 

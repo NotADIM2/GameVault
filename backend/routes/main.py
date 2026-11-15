@@ -6,6 +6,12 @@ main_bp = Blueprint('main', __name__)
 
 FEATURED_COUNT = 4
 ROW_SIZE = 10
+MIN_ROW_SIZE = 4  # a row with fewer games looks broken, so it is left out
+
+
+def _showcase_ready(game):
+    """True for games with real artwork and a developer; placeholders stay off the home page."""
+    return bool(game['developer']) and game['image_url'].startswith('https://')
 
 
 def _owned_ids():
@@ -15,7 +21,7 @@ def _owned_ids():
 
 @main_bp.route("/")
 def home():
-    games = queries.list_games()
+    games = [g for g in queries.list_games() if _showcase_ready(g)]
 
     def released(game):
         return game['release_date'] or ''
@@ -40,7 +46,11 @@ def home():
         ),
         ("Free to play", "price=free", [g for g in rest if not g['price']]),
     ]
-    sections = [(title, query, rows[:ROW_SIZE]) for title, query, rows in sections if rows]
+    sections = [
+        (title, query, rows[:ROW_SIZE])
+        for title, query, rows in sections
+        if len(rows) >= MIN_ROW_SIZE
+    ]
 
     return render_template(
         "index.html", featured=featured, sections=sections, owned_ids=_owned_ids()

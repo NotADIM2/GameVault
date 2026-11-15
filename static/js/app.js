@@ -97,9 +97,20 @@ const byTitle = (a, b) => a.dataset.title.localeCompare(b.dataset.title);
 const byNumber = (key, direction) => (a, b) =>
     direction * (Number(a.dataset[key]) - Number(b.dataset[key])) || byTitle(a, b);
 
+// Most owned first. Ties go to higher-rated games, then games with real artwork, then newer ones,
+// so the default view never opens on a placeholder.
+const byPopularity = (a, b) =>
+    Number(b.dataset.owners) - Number(a.dataset.owners) ||
+    Number(b.dataset.rating) - Number(a.dataset.rating) ||
+    a.hasAttribute('data-no-art') - b.hasAttribute('data-no-art') ||
+    b.dataset.released.localeCompare(a.dataset.released) ||
+    byTitle(a, b);
+
+// '' is the default sort; 'popular' stays as an alias for links like /store?sort=popular
 const SORTERS = {
-    '': byTitle,
-    'popular': byNumber('owners', -1),
+    '': byPopularity,
+    'popular': byPopularity,
+    'title': byTitle,
     'rating': byNumber('rating', -1),
     'new': (a, b) => b.dataset.released.localeCompare(a.dataset.released) || byTitle(a, b),
     'price-asc': byNumber('price', 1),
@@ -124,7 +135,7 @@ function initStore() {
         q: params.get('q') || '',
         genre: params.get('genre') || '',
         price: params.get('price') in PRICE_FILTERS ? params.get('price') : '',
-        sort: params.get('sort') in SORTERS ? params.get('sort') : ''
+        sort: params.get('sort') in SORTERS && params.get('sort') !== 'popular' ? params.get('sort') : ''
     };
 
     function render() {

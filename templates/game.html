@@ -46,8 +46,6 @@
 <div class="page game-details">
 
     <div class="game-main">
-        <img class="game-cover" src="{{ game.image_url }}" alt="{{ game.title }} cover art">
-
         <section id="reviews" class="reviews">
             <h2>Player reviews{% if reviews %} <span class="muted">({{ reviews|length }})</span>{% endif %}</h2>
 
@@ -87,6 +85,8 @@
     </div>
 
     <aside class="info-card">
+        {# Steam header art is 460px wide, which matches this card, so it stays sharp #}
+        <img class="game-cover" src="{{ game.image_url }}" alt="{{ game.title }} cover art">
         <h2>Game information</h2>
         <dl>
             <div><dt>Developer</dt><dd>{{ game.developer or '—' }}{% if game.developer_country %} <span class="muted">({{ game.developer_country }})</span>{% endif %}</dd></div>
