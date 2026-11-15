@@ -1,0 +1,10 @@
+{
+  "id": 43,
+  "title": "Dark Souls 3",
+  "price": 1299,
+  "genres": ["RPG"],
+  "developer": "FromSoftware",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/374320/header.jpg"
+}

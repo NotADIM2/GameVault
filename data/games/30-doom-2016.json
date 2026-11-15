@@ -1,0 +1,10 @@
+{
+  "id": 30,
+  "title": "Doom 2016",
+  "price": 1299,
+  "genres": ["FPS"],
+  "developer": "id Software",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/379720/header.jpg"
+}

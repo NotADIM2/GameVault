@@ -1,0 +1,10 @@
+{
+  "id": 23,
+  "title": "Apex Legends",
+  "price": 0,
+  "genres": ["FPS", "Multiplayer"],
+  "developer": "Respawn Entertainment",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/header.jpg"
+}

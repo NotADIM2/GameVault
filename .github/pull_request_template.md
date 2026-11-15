@@ -6,7 +6,7 @@ Fixes #<!-- issue number, if there is one -->
 
 ## Type of change
 
-- [ ] 🃏 Catalog: added or updated games in `data/games.json`
+- [ ] 🃏 Catalog: added or updated games in `data/games/` or studios in `data/developers/`
 - [ ] ✨ New feature
 - [ ] 🐛 Bug fix
 - [ ] 🎨 UI / styling

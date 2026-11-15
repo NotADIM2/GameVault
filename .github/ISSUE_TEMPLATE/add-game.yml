@@ -1,12 +1,12 @@
 name: 🃏 Add a game
 description: Suggest a game for the catalog, or claim one to add yourself.
 title: "[Game] "
-labels: ["good first issue"]
+labels: ["catalog", "good first issue"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for growing the catalog! Games live in `data/games.json`. See [Adding a game](https://github.com/NotADIM2/GameVault/blob/main/CONTRIBUTING.md#adding-a-game) for the format.
+        Thanks for growing the catalog! Each game is one file in `data/games/`. See [Adding a game](https://github.com/NotADIM2/GameVault/blob/main/CONTRIBUTING.md#adding-a-game) for the format.
 
   - type: input
     id: title
@@ -46,6 +46,7 @@ body:
         - Adventure
         - Battle Royale
         - FPS
+        - Fighting
         - Horror
         - Indie
         - MMORPG
@@ -54,6 +55,7 @@ body:
         - Puzzle
         - RPG
         - Racing
+        - Roguelike
         - Sci-Fi
         - Simulation
         - Sports

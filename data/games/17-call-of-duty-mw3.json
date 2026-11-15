@@ -1,0 +1,10 @@
+{
+  "id": 17,
+  "title": "Call of Duty MW3",
+  "price": 2999,
+  "genres": ["FPS", "Multiplayer"],
+  "developer": "Sledgehammer Games",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/capsule_616x353.jpg"
+}

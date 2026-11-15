@@ -1,0 +1,10 @@
+{
+  "id": 16,
+  "title": "Cricket 24",
+  "price": 1599,
+  "genres": ["Sports", "Multiplayer"],
+  "developer": "Big Ant Studios",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2358260/header.jpg"
+}

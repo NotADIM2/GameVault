@@ -1,0 +1,10 @@
+{
+  "id": 3,
+  "title": "Cuphead",
+  "price": 1299,
+  "genres": ["Adventure", "Indie"],
+  "developer": "Studio MDHR",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/268910/header.jpg"
+}

@@ -1,0 +1,10 @@
+{
+  "id": 27,
+  "title": "Destiny 2",
+  "price": 0,
+  "genres": ["FPS", "Multiplayer"],
+  "developer": "Bungie",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1085660/header.jpg"
+}

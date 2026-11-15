@@ -1,0 +1,10 @@
+{
+  "id": 73,
+  "title": "Warframe",
+  "price": 0,
+  "genres": ["FPS", "Multiplayer"],
+  "developer": "Digital Extremes",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/230410/header.jpg"
+}

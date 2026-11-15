@@ -1,0 +1,10 @@
+{
+  "id": 58,
+  "title": "No Man's Sky",
+  "price": 1599,
+  "genres": ["Sci-Fi", "Multiplayer"],
+  "developer": "Hello Games",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/275850/header.jpg"
+}

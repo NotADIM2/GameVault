@@ -1,0 +1,10 @@
+{
+  "id": 67,
+  "title": "Portal 2",
+  "price": 799,
+  "genres": ["Puzzle"],
+  "developer": "Valve",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/620/header.jpg"
+}

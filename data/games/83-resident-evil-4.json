@@ -1,0 +1,10 @@
+{
+  "id": 83,
+  "title": "Resident Evil 4",
+  "price": 1199,
+  "genres": ["Horror"],
+  "developer": "Capcom",
+  "release_date": "2023-03-24",
+  "description": "Survival is just the beginning. Six years have passed since the biological disaster in Raccoon City. Leon S. Kennedy, one of the survivors, has been sent to rescue the president's kidnapped daughter.",
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2050650/header.jpg"
+}

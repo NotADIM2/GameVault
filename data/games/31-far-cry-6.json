@@ -1,0 +1,10 @@
+{
+  "id": 31,
+  "title": "Far Cry 6",
+  "price": 1999,
+  "genres": ["Action"],
+  "developer": "Ubisoft Toronto",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2369390/header.jpg"
+}

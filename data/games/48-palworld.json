@@ -1,0 +1,10 @@
+{
+  "id": 48,
+  "title": "Palworld",
+  "price": 1399,
+  "genres": ["RPG", "Multiplayer"],
+  "developer": "Pocketpair",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1623730/header.jpg"
+}

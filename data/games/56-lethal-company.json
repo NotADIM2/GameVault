@@ -1,0 +1,10 @@
+{
+  "id": 56,
+  "title": "Lethal Company",
+  "price": 499,
+  "genres": ["Horror", "Indie", "Multiplayer"],
+  "developer": "Zeekerss",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1966720/header.jpg"
+}

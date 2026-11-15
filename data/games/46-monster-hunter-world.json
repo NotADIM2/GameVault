@@ -1,0 +1,10 @@
+{
+  "id": 46,
+  "title": "Monster Hunter World",
+  "price": 1699,
+  "genres": ["RPG", "Multiplayer"],
+  "developer": "Capcom",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/582010/header.jpg"
+}

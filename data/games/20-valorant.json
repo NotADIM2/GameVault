@@ -1,0 +1,10 @@
+{
+  "id": 20,
+  "title": "Valorant",
+  "price": 0,
+  "genres": ["FPS", "Multiplayer"],
+  "developer": "Riot Games",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc94132edcff93222/6274457e5e3b1c67623910c2/Valorant_2022_EP4_KeyArt.jpg"
+}

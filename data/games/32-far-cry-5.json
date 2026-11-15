@@ -1,0 +1,10 @@
+{
+  "id": 32,
+  "title": "Far Cry 5",
+  "price": 1499,
+  "genres": ["Action"],
+  "developer": "Ubisoft Montreal",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/552520/header.jpg"
+}

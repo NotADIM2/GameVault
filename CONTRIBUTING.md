@@ -19,14 +19,23 @@ Not sure where to start? Look for issues labelled `good first issue`, or pick a 
 
 ## Editing in your browser
 
-The quickest way to change the catalog:
+Every game is its own small file in [`data/games/`](data/games), so your change never gets in the way of anyone else's.
 
-1. Open [`data/games.json`](data/games.json) on GitHub and click the **pencil icon** (Edit this file). GitHub makes a fork for you automatically.
-2. Make your change. The format is explained in [Adding a game](#adding-a-game) below.
-3. Click **Commit changes...**, write a short message such as "Add Hollow Knight", and choose **Propose changes**.
-4. Click **Create pull request**, and write `Closes #<issue number>` in the description if you're working on an issue.
+**To add a new game:**
 
-That's it. An automatic check then tests your change (see [Automatic checks](#automatic-checks)).
+1. Open the [`data/games/`](data/games) folder on GitHub, then click **Add file → Create new file**. GitHub makes a fork for you automatically.
+2. Name the file `<id>-<title>.json`, all lowercase with hyphens, for example `91-hollow-knight.json`. The "Add games" issues list the exact file name for every game.
+3. Paste in the game's details. The format is explained in [Adding a game](#adding-a-game) below.
+4. If the studio isn't in [`data/developers/`](data/developers) yet, add a file for it the same way (see [New studios](#new-studios)). You can do this in the same pull request.
+
+**To fix an existing game:** open its file in [`data/games/`](data/games) (the issues link straight to it) and click the **pencil icon**.
+
+**Then:**
+
+1. Click **Commit changes...**, write a short message such as "Add Hollow Knight", and choose **Propose changes**.
+2. Click **Create pull request**. If you're working on an issue, write `Part of #<issue number>` in the description.
+
+That's it. An automatic check then tests your change (see [Automatic checks](#automatic-checks)). If the file name is wrong, the check tells you the right one.
 
 ## Workflow
 
@@ -40,7 +49,7 @@ Keep each pull request to one change. "Add Hollow Knight" or "Add wishlist page"
 
 ## Adding a game
 
-Games live in `data/games.json`. Add an object to the end of the `games` array. Hollow Knight is a real example: it has id 91 reserved in an "Add games" issue.
+Each game is one file in `data/games/`, named `<id>-<title>.json`: the id, a hyphen, then the title in lowercase with hyphens between words and punctuation left out. For example, Hollow Knight (id 91, reserved in an "Add games" issue) goes in `data/games/91-hollow-knight.json`:
 
 ```json
 {
@@ -60,13 +69,28 @@ Games live in `data/games.json`. Add an object to the end of the `games` array. 
 | `id` | If the game is listed in an ["Add games" issue](https://github.com/NotADIM2/GameVault/issues?q=is%3Aopen+label%3Acatalog+%22Add+games%22), use the id reserved for it there (91–240). For any other game, use the next unused number **from 1000 upward**. Never change an existing id, because it is part of the game's URL. |
 | `title` | The game's official name. |
 | `price` | Whole rupees (INR). Use `0` for free-to-play games. |
-| `genres` | The **first** entry is the main genre shown on cards. Reuse existing genres where possible; check the list with a search of the file. |
-| `developer` | Must match a `name` in the `developers` array at the top of the file. If the studio is new, add it there too: `{ "name": "Team Cherry", "country": "Australia" }`. |
+| `genres` | The **first** entry is the main genre shown on cards. Reuse existing genres where possible, spelled the same way: Action, Adventure, Battle Royale, FPS, Horror, Indie, MMORPG, MOBA, Multiplayer, Puzzle, RPG, Racing, Sci-Fi, Simulation, Sports, Stealth, Strategy, Survival. New ones such as Roguelike or Fighting are fine. |
+| `developer` | The studio's name, exactly as written in its file in `data/developers/`. |
 | `release_date` | `YYYY-MM-DD`, or `null` if unknown. |
 | `description` | One or two sentences **in your own words**. Do not paste store-page text. |
 | `image_url` | For Steam games: `https://cdn.cloudflare.steamstatic.com/steam/apps/<app id>/header.jpg`. The app id is the number in the game's Steam store URL. |
 
 Before opening the pull request, check that the `image_url` opens a picture when you paste it into your browser.
+
+### New studios
+
+Each studio is one file in `data/developers/`, named after the studio in lowercase with hyphens. Team Cherry goes in `data/developers/team-cherry.json`:
+
+```json
+{
+  "name": "Team Cherry",
+  "country": "Australia"
+}
+```
+
+Check the folder first: if the studio already has a file, just use its `name` in your game.
+
+### Seeing it in the app
 
 If you have the app running, you can also see your game in the store:
 
@@ -79,7 +103,7 @@ python app.py
 
 Every pull request runs two checks on GitHub's servers:
 
-- **Catalog** runs `scripts/check_catalog.py`. It finds invalid JSON (such as a missing comma), duplicate ids or titles, missing fields, prices that aren't whole numbers, dates that aren't `YYYY-MM-DD`, developers missing from the `developers` list, and image links that don't start with `https://`.
+- **Catalog** runs `scripts/check_catalog.py`. It finds invalid JSON (such as a missing comma), wrongly named files, duplicate ids or titles, missing fields, prices that aren't whole numbers, dates that aren't `YYYY-MM-DD`, studios without a file in `data/developers/`, and image links that don't start with `https://`.
 - **Lint** runs `ruff check .` on the Python code.
 
 If a check fails, click **Details** next to it to see what's wrong, then fix it in the same pull request. On your first pull request, the checks start once a maintainer approves them.

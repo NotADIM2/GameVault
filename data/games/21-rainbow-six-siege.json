@@ -1,0 +1,10 @@
+{
+  "id": 21,
+  "title": "Rainbow Six Siege",
+  "price": 0,
+  "genres": ["FPS", "Multiplayer"],
+  "developer": "Ubisoft Montreal",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/359550/header.jpg"
+}

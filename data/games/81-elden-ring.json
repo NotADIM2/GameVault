@@ -1,0 +1,10 @@
+{
+  "id": 81,
+  "title": "Elden Ring",
+  "price": 2399,
+  "genres": ["RPG"],
+  "developer": "FromSoftware",
+  "release_date": "2022-02-25",
+  "description": "Rise, Tarnished, and let grace guide thee. Explore a vast open world of breathtaking design, fight imposing enemies and bosses, and uncover mysteries in a world full of danger and wonder.",
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg"
+}

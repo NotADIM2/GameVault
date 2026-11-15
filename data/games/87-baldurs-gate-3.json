@@ -1,0 +1,10 @@
+{
+  "id": 87,
+  "title": "Baldur's Gate 3",
+  "price": 2299,
+  "genres": ["RPG"],
+  "developer": "Larian Studios",
+  "release_date": "2023-08-03",
+  "description": "Gather your party, and return to the Forgotten Realms in a tale of fellowship and betrayal, sacrifice and survival, and the lure of absolute power.",
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/header.jpg"
+}

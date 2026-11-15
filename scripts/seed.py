@@ -1,19 +1,27 @@
-"""Load data/games.json into Supabase. Safe to re-run: every write is an upsert.
+"""Load the catalog (data/games/ and data/developers/) into Supabase. Safe to re-run: every
+write is an upsert.
 
 Usage (from the project root, after running supabase/schema.sql):
     python -m scripts.seed
 """
-import json
+import sys
 from pathlib import Path
 
 from dotenv import load_dotenv
+
+from scripts.check_catalog import check
 
 ROOT = Path(__file__).resolve().parent.parent
 
 
 def load_catalog():
-    with open(ROOT / "data" / "games.json", encoding="utf-8") as f:
-        return json.load(f)
+    """Read and validate the catalog; refuse to seed if it has problems."""
+    catalog, errors = check(ROOT)
+    if errors:
+        print("The catalog has problems, so nothing was loaded:\n")
+        print("\n".join(f"  - {e}" for e in errors))
+        sys.exit(1)
+    return catalog
 
 
 def seed(client, catalog):

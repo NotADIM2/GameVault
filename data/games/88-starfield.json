@@ -1,0 +1,10 @@
+{
+  "id": 88,
+  "title": "Starfield",
+  "price": 2599,
+  "genres": ["RPG"],
+  "developer": "Bethesda Game Studios",
+  "release_date": "2023-09-06",
+  "description": "Starfield is the first new universe in over 25 years from Bethesda Game Studios, the award-winning creators of The Elder Scrolls V: Skyrim and Fallout 4.",
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1716740/header.jpg"
+}

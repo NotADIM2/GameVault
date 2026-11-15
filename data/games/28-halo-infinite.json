@@ -1,0 +1,10 @@
+{
+  "id": 28,
+  "title": "Halo Infinite",
+  "price": 0,
+  "genres": ["FPS", "Multiplayer"],
+  "developer": "343 Industries",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1240440/header.jpg"
+}

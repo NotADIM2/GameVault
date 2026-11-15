@@ -1,0 +1,10 @@
+{
+  "id": 1,
+  "title": "Celeste",
+  "price": 399,
+  "genres": ["Adventure", "Indie"],
+  "developer": "Maddy Makes Games",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/504230/header.jpg"
+}

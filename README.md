@@ -74,8 +74,12 @@ backend/
   db.py                Supabase client
   queries.py           All database access
   routes/              main (home, store, game), auth, shop (buy, library, reviews)
-data/games.json        Catalog seed data
-scripts/seed.py        Loads the catalog into Supabase (safe to re-run)
+data/
+  games/               The catalog: one JSON file per game
+  developers/          One JSON file per studio
+scripts/
+  check_catalog.py     Validates the catalog (runs on every pull request)
+  seed.py              Loads the catalog into Supabase (safe to re-run)
 supabase/schema.sql    Tables, views, purchase function and security rules
 templates/             Jinja templates
 static/                CSS, JavaScript and images
@@ -93,7 +97,7 @@ The Flask server is the only client of the database. Row Level Security is enabl
 ## Development
 
 ```bash
-python scripts/check_catalog.py   # checks data/games.json
+python scripts/check_catalog.py   # checks the catalog
 pip install ruff
 ruff check .                      # lints the Python code
 ```
@@ -109,8 +113,8 @@ Contributions of any size are welcome, from fixing one release date to building 
 All you need is a free GitHub account.
 
 1. Pick a task from the [project board](https://github.com/users/NotADIM2/projects/3) or the [good first issues](https://github.com/NotADIM2/GameVault/issues?q=is%3Aopen+label%3A%22good+first+issue%22), and comment "I'll take this" so nobody else does the same work.
-2. Open [`data/games.json`](data/games.json) and click the **pencil icon** to edit it. GitHub makes your own copy (a fork) automatically.
-3. Make your change. The [catalog format](CONTRIBUTING.md#adding-a-game) shows an example game.
+2. Every game is its own small file in [`data/games/`](data/games). To add a game, open that folder and click **Add file → Create new file**. To fix one, open its file and click the **pencil icon**. GitHub makes your own copy (a fork) automatically.
+3. Make your change. The [catalog format](CONTRIBUTING.md#adding-a-game) shows an example game, and the issues give you the exact file name to use.
 4. Click **Commit changes...**, then **Propose changes**, then **Create pull request**.
 
 [CONTRIBUTING.md](CONTRIBUTING.md#editing-in-your-browser) has the same steps in more detail.
@@ -126,7 +130,7 @@ Once your pull request is merged, you show up in the repository's contributors l
 
 ### Good first contributions
 
-No setup needed: these only change `data/games.json`.
+No setup needed: these only change files in [`data/`](data).
 
 | Task | Issue |
 |---|---|

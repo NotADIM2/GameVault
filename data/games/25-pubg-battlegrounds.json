@@ -1,0 +1,10 @@
+{
+  "id": 25,
+  "title": "PUBG Battlegrounds",
+  "price": 0,
+  "genres": ["Battle Royale", "Multiplayer"],
+  "developer": "PUBG Studios",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/578080/header.jpg"
+}
