@@ -2,10 +2,11 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Checks](https://github.com/NotADIM2/GameVault/actions/workflows/checks.yml/badge.svg)](https://github.com/NotADIM2/GameVault/actions/workflows/checks.yml)
 
 A digital game store and library built with Flask and Supabase (PostgreSQL). Browse a catalog of 90 games, buy or add free games to your library, and leave reviews for the games you own.
 
-**GameVault is open to contributors.** Add a game to the catalog, fill in missing details, or build a new feature. The [contributing guide](CONTRIBUTING.md) explains how, and [good first contributions](#good-first-contributions) lists places to start.
+> **New to open source? Start here.** You can add a game to GameVault in about five minutes, straight from your browser. You don't need to install anything, set up a database or know Python. [See how ↓](#your-first-contribution-no-setup)
 
 ## Features
 
@@ -24,6 +25,8 @@ A digital game store and library built with Flask and Supabase (PostgreSQL). Bro
 | Frontend | Jinja templates, plain CSS and JavaScript |
 
 ## Getting started
+
+> Only needed if you want to run the app or change its code. **To add or fix games, skip this** and see [Your first contribution](#your-first-contribution-no-setup).
 
 ### 1. Install dependencies
 
@@ -90,34 +93,63 @@ The Flask server is the only client of the database. Row Level Security is enabl
 ## Development
 
 ```bash
+python scripts/check_catalog.py   # checks data/games.json
 pip install ruff
-ruff check .
+ruff check .                      # lints the Python code
 ```
+
+Both also run automatically on every pull request.
 
 ## Contributing
 
-Contributions of any size are welcome, from one new game card to a whole feature. Read [CONTRIBUTING.md](CONTRIBUTING.md) for setup, the catalog format and the pull request checklist.
+Contributions of any size are welcome, from fixing one release date to building a whole feature. First-timers are very welcome.
+
+### Your first contribution (no setup)
+
+All you need is a free GitHub account.
+
+1. Pick a task from the [project board](https://github.com/users/NotADIM2/projects/3) or the [good first issues](https://github.com/NotADIM2/GameVault/issues?q=is%3Aopen+label%3A%22good+first+issue%22), and comment "I'll take this" so nobody else does the same work.
+2. Open [`data/games.json`](data/games.json) and click the **pencil icon** to edit it. GitHub makes your own copy (a fork) automatically.
+3. Make your change. The [catalog format](CONTRIBUTING.md#adding-a-game) shows an example game.
+4. Click **Commit changes...**, then **Propose changes**, then **Create pull request**.
+
+[CONTRIBUTING.md](CONTRIBUTING.md#editing-in-your-browser) has the same steps in more detail.
+
+### You can't break anything
+
+- **Nothing changes until it's reviewed.** Your pull request is only a suggestion. The live project stays exactly as it is until a maintainer reviews and merges it.
+- **Mistakes get caught for you.** An automatic check tests every pull request and tells you in plain words what to fix, for example a missing comma on line 412, or a date that isn't `YYYY-MM-DD`. Fix it in the same pull request and the check runs again.
+- **No keys or passwords involved.** Contributors never need access to the database or any secrets.
+- **Questions are fine.** Not sure about something? Open the pull request anyway and ask in it, or [open an issue](https://github.com/NotADIM2/GameVault/issues/new/choose).
+
+Once your pull request is merged, you show up in the repository's contributors list.
 
 ### Good first contributions
 
-| Task | Where |
+No setup needed: these only change `data/games.json`.
+
+| Task | Issue |
 |---|---|
-| **Add a game** to the catalog | `data/games.json` |
-| **Write descriptions**: 80 of 90 games have none | `data/games.json` |
-| **Add release dates**: 80 of 90 games are missing one | `data/games.json` |
-| **Find artwork** for Genshin Impact, Honkai: Star Rail and Alan Wake 2, which use placeholder art | `data/games.json` |
-| **Replace the 6 fictional titles** (ids 75–80) with real games; they currently borrow other games' artwork | `data/games.json` |
+| **Add your favourite game** to the catalog | [#9](https://github.com/NotADIM2/GameVault/issues/9) |
+| **Write descriptions and release dates**: 80 of 90 games are missing them, split into batches by genre | [#2](https://github.com/NotADIM2/GameVault/issues/2) · [#3](https://github.com/NotADIM2/GameVault/issues/3) · [#4](https://github.com/NotADIM2/GameVault/issues/4) · [#5](https://github.com/NotADIM2/GameVault/issues/5) · [#6](https://github.com/NotADIM2/GameVault/issues/6) |
+| **Find artwork** for Genshin Impact, Honkai: Star Rail and Alan Wake 2 | [#7](https://github.com/NotADIM2/GameVault/issues/7) |
+| **Replace the 6 fictional titles** (ids 75–80) with real games | [#8](https://github.com/NotADIM2/GameVault/issues/8) |
 
 ### Feature ideas
 
-- Wishlist stored in the database (it currently lives in the browser)
-- Cart and a mock checkout with order history
-- A "Your stats" page: hours and spending by genre
-- Recommendations ("because you own X") from shared genres
-- Full-text search with PostgreSQL
-- Automated tests for the routes and database queries
+These need the app running (see [Getting started](#getting-started)).
 
-Open an issue before starting a large feature, so we can agree on the approach first.
+| Feature | Issue |
+|---|---|
+| Wishlist stored in the database (it currently lives in the browser) | [#10](https://github.com/NotADIM2/GameVault/issues/10) |
+| Cart and a mock checkout with order history | [#11](https://github.com/NotADIM2/GameVault/issues/11) |
+| A "Your stats" page: hours and spending by genre | [#12](https://github.com/NotADIM2/GameVault/issues/12) |
+| Recommendations ("because you own X") from shared genres | [#13](https://github.com/NotADIM2/GameVault/issues/13) |
+| Full-text search with PostgreSQL | [#14](https://github.com/NotADIM2/GameVault/issues/14) |
+| Rate limiting for login and sign-up | [#16](https://github.com/NotADIM2/GameVault/issues/16) |
+| Automated tests for the routes and database queries | open an issue |
+
+Have your own idea? [Suggest a feature](https://github.com/NotADIM2/GameVault/issues/new/choose). For a large feature, comment on the issue before starting so we can agree on the approach first.
 
 ## Notes
 
