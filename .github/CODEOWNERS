@@ -1,0 +1,12 @@
+# Every pull request automatically requests a review from the maintainer.
+* @NotADIM2
+
+# Sensitive paths: code here runs with database credentials, defines the
+# security rules, or controls dependencies and automation. Review line by line.
+/backend/           @NotADIM2
+/scripts/           @NotADIM2
+/supabase/          @NotADIM2
+/app.py             @NotADIM2
+/requirements.txt   @NotADIM2
+/pyproject.toml     @NotADIM2
+/.github/           @NotADIM2

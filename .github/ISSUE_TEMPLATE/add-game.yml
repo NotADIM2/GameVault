@@ -1,0 +1,96 @@
+name: 🃏 Add a game
+description: Suggest a game for the catalog, or claim one to add yourself.
+title: "[Game] "
+labels: ["good first issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for growing the catalog! Games live in `data/games.json`. See [Adding a game](https://github.com/NotADIM2/GameVault/blob/main/CONTRIBUTING.md#adding-a-game) for the format.
+
+  - type: input
+    id: title
+    attributes:
+      label: Game title
+      description: The official name.
+      placeholder: Hollow Knight
+    validations:
+      required: true
+
+  - type: input
+    id: steam
+    attributes:
+      label: Steam store link
+      description: Used for the artwork. The number in the link is the app id.
+      placeholder: https://store.steampowered.com/app/367520/
+    validations:
+      required: false
+
+  - type: input
+    id: price
+    attributes:
+      label: Price in rupees (INR)
+      description: Whole number. Use 0 for free-to-play.
+      placeholder: "459"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: genres
+    attributes:
+      label: Genres
+      description: Pick the main genre first, then any extra tags.
+      multiple: true
+      options:
+        - Action
+        - Adventure
+        - Battle Royale
+        - FPS
+        - Horror
+        - Indie
+        - MMORPG
+        - MOBA
+        - Multiplayer
+        - Puzzle
+        - RPG
+        - Racing
+        - Sci-Fi
+        - Simulation
+        - Sports
+        - Stealth
+        - Strategy
+        - Survival
+    validations:
+      required: true
+
+  - type: input
+    id: developer
+    attributes:
+      label: Developer and country
+      placeholder: Team Cherry, Australia
+    validations:
+      required: true
+
+  - type: input
+    id: release
+    attributes:
+      label: Release date
+      placeholder: "2017-02-24"
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Short description
+      description: One or two sentences in your own words. Please don't copy store-page text.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: claim
+    attributes:
+      label: Want to add it yourself?
+      options:
+        - label: I'll open a pull request for this game
+          required: false

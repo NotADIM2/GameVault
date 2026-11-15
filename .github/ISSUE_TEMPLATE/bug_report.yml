@@ -1,0 +1,51 @@
+name: 🐛 Bug report
+description: Something is broken or behaves unexpectedly.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Found a **security** problem? Don't file it here. [Report it privately](https://github.com/NotADIM2/GameVault/security/advisories/new) instead.
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Describe the problem. Include the full error message if there was one.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to the store page
+        2. Filter by "Racing"
+        3. Click on ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Drag images in here if they help. Make sure no keys or `.env` contents are visible.
+    validations:
+      required: false
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: Windows 11, Python 3.13, Chrome
+    validations:
+      required: false
