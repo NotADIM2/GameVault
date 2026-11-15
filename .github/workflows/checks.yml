@@ -1,0 +1,43 @@
+name: Checks
+
+# Runs on every pull request, including ones from forks. It uses the `pull_request` trigger
+# (never `pull_request_target`) and read-only permissions, so code from a pull request gets
+# no access to repository secrets and can't push or change anything.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  catalog:
+    name: Catalog
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - name: Check data/games.json
+        run: python scripts/check_catalog.py
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - name: Install ruff
+        run: pip install ruff==0.17.5
+      - name: Run ruff
+        run: ruff check .
