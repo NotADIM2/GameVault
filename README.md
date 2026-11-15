@@ -1,6 +1,11 @@
 # GameVault
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 A digital game store and library built with Flask and Supabase (PostgreSQL). Browse a catalog of 90 games, buy or add free games to your library, and leave reviews for the games you own.
+
+**GameVault is open to contributors.** Add a game to the catalog, fill in missing details, or build a new feature. The [contributing guide](CONTRIBUTING.md) explains how, and [good first contributions](#good-first-contributions) lists places to start.
 
 ## Features
 
@@ -88,6 +93,31 @@ The Flask server is the only client of the database. Row Level Security is enabl
 pip install ruff
 ruff check .
 ```
+
+## Contributing
+
+Contributions of any size are welcome, from one new game card to a whole feature. Read [CONTRIBUTING.md](CONTRIBUTING.md) for setup, the catalog format and the pull request checklist.
+
+### Good first contributions
+
+| Task | Where |
+|---|---|
+| **Add a game** to the catalog | `data/games.json` |
+| **Write descriptions**: 80 of 90 games have none | `data/games.json` |
+| **Add release dates**: 80 of 90 games are missing one | `data/games.json` |
+| **Find artwork** for Genshin Impact, Honkai: Star Rail and Alan Wake 2, which use placeholder art | `data/games.json` |
+| **Replace the 6 fictional titles** (ids 75–80) with real games; they currently borrow other games' artwork | `data/games.json` |
+
+### Feature ideas
+
+- Wishlist stored in the database (it currently lives in the browser)
+- Cart and a mock checkout with order history
+- A "Your stats" page: hours and spending by genre
+- Recommendations ("because you own X") from shared genres
+- Full-text search with PostgreSQL
+- Automated tests and a GitHub Actions workflow that validates `data/games.json`
+
+Open an issue before starting a large feature, so we can agree on the approach first.
 
 ## Notes
 
