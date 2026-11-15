@@ -14,8 +14,8 @@ Fixes #<!-- issue number, if there is one -->
 
 ## Checklist
 
-- [ ] I ran the app locally and checked my change works
-- [ ] `ruff check .` passes
+- [ ] The automatic checks pass (or I ran `python scripts/check_catalog.py` and `ruff check .`)
+- [ ] For code changes: I ran the app locally and checked my change works
 - [ ] This PR does one thing (separate changes go in separate PRs)
 - [ ] No secrets, keys or `.env` contents are included
 - [ ] Database changes (if any) are in `supabase/schema.sql`, with upgrade steps described below

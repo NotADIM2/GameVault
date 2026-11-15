@@ -115,7 +115,7 @@ Contributions of any size are welcome, from one new game card to a whole feature
 - A "Your stats" page: hours and spending by genre
 - Recommendations ("because you own X") from shared genres
 - Full-text search with PostgreSQL
-- Automated tests and a GitHub Actions workflow that validates `data/games.json`
+- Automated tests for the routes and database queries
 
 Open an issue before starting a large feature, so we can agree on the approach first.
 
