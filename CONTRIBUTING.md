@@ -36,11 +36,11 @@ That's it. An automatic check then tests your change (see [Automatic checks](#au
 4. **Run the checks:** `python scripts/check_catalog.py` if you changed the catalog, and `pip install ruff`, then `ruff check .` if you changed code.
 5. **Open a pull request** against `main` that says what you changed and how you tested it. For UI changes, add a screenshot.
 
-Keep each pull request to one change. "Add 3 racing games" or "Add wishlist page" are easy to review; "Add games, fix the navbar and refactor queries" is not.
+Keep each pull request to one change. "Add Hollow Knight" or "Add wishlist page" are easy to review; "Add games, fix the navbar and refactor queries" is not. For the catalog, that means **one game per pull request**.
 
 ## Adding a game
 
-Games live in `data/games.json`. Add an object to the end of the `games` array:
+Games live in `data/games.json`. Add an object to the end of the `games` array. Hollow Knight is a real example: it has id 91 reserved in an "Add games" issue.
 
 ```json
 {
@@ -57,7 +57,7 @@ Games live in `data/games.json`. Add an object to the end of the `games` array:
 
 | Field | Rules |
 |---|---|
-| `id` | The next unused number. Never change an existing id, because it is part of the game's URL. |
+| `id` | If the game is listed in an ["Add games" issue](https://github.com/NotADIM2/GameVault/issues?q=is%3Aopen+label%3Acatalog+%22Add+games%22), use the id reserved for it there (91–240). For any other game, use the next unused number **from 1000 upward**. Never change an existing id, because it is part of the game's URL. |
 | `title` | The game's official name. |
 | `price` | Whole rupees (INR). Use `0` for free-to-play games. |
 | `genres` | The **first** entry is the main genre shown on cards. Reuse existing genres where possible; check the list with a search of the file. |
