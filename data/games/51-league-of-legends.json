@@ -1,0 +1,10 @@
+{
+  "id": 51,
+  "title": "League of Legends",
+  "price": 0,
+  "genres": ["MOBA", "Strategy", "Multiplayer"],
+  "developer": "Riot Games",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://ddragon.leagueoflegends.com/cdn/img/champion-splash/Jinx_0.jpg"
+}

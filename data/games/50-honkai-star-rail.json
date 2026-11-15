@@ -1,0 +1,10 @@
+{
+  "id": 50,
+  "title": "Honkai: Star Rail",
+  "price": 0,
+  "genres": ["RPG"],
+  "developer": "HoYoverse",
+  "release_date": null,
+  "description": null,
+  "image_url": "/static/images/placeholder.svg"
+}

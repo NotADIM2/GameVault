@@ -1,0 +1,10 @@
+{
+  "id": 8,
+  "title": "F1 24",
+  "price": 2999,
+  "genres": ["Sports"],
+  "developer": "Codemasters",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2488620/header.jpg"
+}

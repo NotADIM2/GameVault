@@ -1,0 +1,10 @@
+{
+  "id": 29,
+  "title": "Doom Eternal",
+  "price": 1999,
+  "genres": ["FPS"],
+  "developer": "id Software",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/782330/header.jpg"
+}

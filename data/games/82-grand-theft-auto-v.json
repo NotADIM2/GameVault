@@ -1,0 +1,10 @@
+{
+  "id": 82,
+  "title": "Grand Theft Auto V",
+  "price": 1499,
+  "genres": ["Action"],
+  "developer": "Rockstar Games",
+  "release_date": "2015-04-14",
+  "description": "When a young street hustler, a retired bank robber and a terrifying psychopath find themselves entangled with some of the most frightening and deranged elements of the underworld, they must pull off a series of dangerous heists.",
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg"
+}

@@ -1,0 +1,10 @@
+{
+  "id": 53,
+  "title": "Rocket League",
+  "price": 0,
+  "genres": ["Sports", "Multiplayer"],
+  "developer": "Psyonix",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/252950/header.jpg"
+}

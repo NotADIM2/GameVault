@@ -1,0 +1,10 @@
+{
+  "id": 80,
+  "title": "Final Showdown",
+  "price": 1999,
+  "genres": ["Action", "Multiplayer"],
+  "developer": null,
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2073850/header.jpg"
+}

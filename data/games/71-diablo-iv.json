@@ -1,0 +1,10 @@
+{
+  "id": 71,
+  "title": "Diablo IV",
+  "price": 2599,
+  "genres": ["RPG", "Multiplayer"],
+  "developer": "Blizzard Entertainment",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2344520/header.jpg"
+}

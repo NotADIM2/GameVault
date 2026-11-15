@@ -1,0 +1,10 @@
+{
+  "id": 78,
+  "title": "Mystical Quest",
+  "price": 999,
+  "genres": ["Adventure"],
+  "developer": null,
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1954200/header.jpg"
+}

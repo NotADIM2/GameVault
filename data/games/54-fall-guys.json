@@ -1,0 +1,10 @@
+{
+  "id": 54,
+  "title": "Fall Guys",
+  "price": 0,
+  "genres": ["Action", "Multiplayer"],
+  "developer": "Mediatonic",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1097150/header.jpg"
+}

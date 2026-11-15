@@ -1,0 +1,10 @@
+{
+  "id": 68,
+  "title": "Left 4 Dead 2",
+  "price": 0,
+  "genres": ["Horror", "Multiplayer"],
+  "developer": "Valve",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/550/header.jpg"
+}

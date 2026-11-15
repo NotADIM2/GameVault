@@ -1,0 +1,10 @@
+{
+  "id": 18,
+  "title": "Warzone 2",
+  "price": 0,
+  "genres": ["FPS", "Multiplayer"],
+  "developer": "Infinity Ward",
+  "release_date": null,
+  "description": null,
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/header.jpg"
+}
