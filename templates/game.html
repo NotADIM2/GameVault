@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% from "_macros.html" import stars %}
+
+{% block title %}{{ game.title }} | GameVault{% endblock %}
+
+{% block content %}
+<section class="game-hero">
+    <img class="game-hero-bg" src="{{ game.image_url|hero_image }}" data-fallback="{{ game.image_url }}" alt="">
+
+    <div class="game-hero-content">
+        <div class="chips">
+            {% for genre in game.genres %}
+            <a class="chip" href="{{ url_for('main.store', genre=genre) }}">{{ genre }}</a>
+            {% endfor %}
+        </div>
+
+        <h1>{{ game.title }}</h1>
+
+        {% if game.description %}
+        <p>{{ game.description }}</p>
+        {% endif %}
+
+        <div class="game-buttons">
+            {% if owned %}
+                <a class="btn btn-primary btn-lg" href="{{ url_for('shop.library', game=game.game_id) }}">In your library ✓</a>
+            {% elif session.get('user_id') %}
+                <form method="post" action="{{ url_for('shop.buy_game', game_id=game.game_id) }}">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        {% if game.price %}Buy now · {{ game.price|inr }}{% else %}Add to library · Free{% endif %}
+                    </button>
+                </form>
+            {% else %}
+                <a class="btn btn-primary btn-lg" href="{{ url_for('auth.login', next=request.path) }}">
+                    Log in to {% if game.price %}buy · {{ game.price|inr }}{% else %}play free{% endif %}
+                </a>
+            {% endif %}
+
+            {% if not owned %}
+            <button type="button" class="btn btn-ghost btn-lg" id="wishlistBtn" data-game-id="{{ game.game_id }}" aria-pressed="false" hidden>Add to wishlist</button>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+<div class="page game-details">
+
+    <div class="game-main">
+        <img class="game-cover" src="{{ game.image_url }}" alt="{{ game.title }} cover art">
+
+        <section id="reviews" class="reviews">
+            <h2>Player reviews{% if reviews %} <span class="muted">({{ reviews|length }})</span>{% endif %}</h2>
+
+            {% if owned %}
+            <form class="review-form" method="post" action="{{ url_for('shop.review_game', game_id=game.game_id) }}">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <div class="review-form-row">
+                    <label for="reviewRating">Your rating</label>
+                    <select id="reviewRating" name="rating" class="input" required>
+                        {% for value in range(5, 0, -1) %}
+                        <option value="{{ value }}" {% if my_review and my_review.rating == value %}selected{% endif %}>{{ '★' * value }} ({{ value }})</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <label class="sr-only" for="reviewBody">Your review</label>
+                <textarea id="reviewBody" name="body" class="input" rows="3" maxlength="2000" placeholder="What did you think? (optional)">{{ my_review.body or '' if my_review else '' }}</textarea>
+                <button type="submit" class="btn btn-primary">{{ 'Update review' if my_review else 'Post review' }}</button>
+            </form>
+            {% endif %}
+
+            {% for review in reviews %}
+            <article class="review-card">
+                <header>
+                    <h3>{{ review.username }}</h3>
+                    {{ stars(review.rating) }}
+                    <time>{{ review.updated_at|date }}</time>
+                </header>
+                {% if review.body %}<p>{{ review.body }}</p>{% endif %}
+            </article>
+            {% else %}
+            <p class="muted">
+                No reviews yet.
+                {% if not owned %}Own this game to be the first to review it.{% endif %}
+            </p>
+            {% endfor %}
+        </section>
+    </div>
+
+    <aside class="info-card">
+        <h2>Game information</h2>
+        <dl>
+            <div><dt>Developer</dt><dd>{{ game.developer or '—' }}{% if game.developer_country %} <span class="muted">({{ game.developer_country }})</span>{% endif %}</dd></div>
+            <div><dt>Genre</dt><dd>{{ game.primary_genre or '—' }}</dd></div>
+            <div><dt>Release date</dt><dd>{{ game.release_date|date }}</dd></div>
+            <div><dt>Price</dt><dd>{{ game.price|inr }}</dd></div>
+            <div>
+                <dt>Rating</dt>
+                <dd>
+                    {% if game.avg_rating %}★ {{ game.avg_rating }} / 5 <span class="muted">({{ game.review_count }})</span>
+                    {% else %}<span class="muted">Not rated yet</span>{% endif %}
+                </dd>
+            </div>
+            <div><dt>In libraries</dt><dd>{{ game.owner_count }}</dd></div>
+        </dl>
+    </aside>
+
+</div>
+{% endblock %}

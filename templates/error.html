@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}{{ error.name if error else 'Something went wrong' }} | GameVault{% endblock %}
+
+{% block content %}
+<div class="page">
+    <div class="empty-state">
+        <span class="eyebrow">Error {{ error.code if error else 500 }}</span>
+        <h2>{{ error.name if error else 'Something went wrong' }}</h2>
+        <p>{{ error.description if error else 'We could not load this page. Please try again in a moment.' }}</p>
+        <a class="btn btn-primary" href="{{ url_for('main.home') }}">Back to home</a>
+    </div>
+</div>
+{% endblock %}

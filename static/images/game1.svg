@@ -1,0 +1,13 @@
+<svg width="800" height="520" viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1321" />
+      <stop offset="100%" stop-color="#1b3c5b" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#grad1)" rx="32" />
+  <circle cx="210" cy="260" r="120" fill="#60e0ff" opacity="0.18" />
+  <circle cx="580" cy="160" r="80" fill="#a56bff" opacity="0.24" />
+  <rect x="120" y="380" width="560" height="30" rx="15" fill="#60e0ff" opacity="0.3" />
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, sans-serif" font-size="42" fill="#f5faff" opacity="0.9">Cyber Arena</text>
+</svg>

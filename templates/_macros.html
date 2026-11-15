@@ -1,0 +1,26 @@
+{% macro game_card(game, owned=false) %}
+<a class="game-card" href="{{ url_for('main.game', game_id=game.game_id) }}"
+   data-title="{{ game.title|lower }}"
+   data-genres="{{ game.genres|join('|') }}"
+   data-price="{{ game.price }}"
+   data-rating="{{ game.avg_rating or 0 }}"
+   data-owners="{{ game.owner_count }}"
+   data-released="{{ game.release_date or '' }}">
+    <div class="game-card-media">
+        <img src="{{ game.image_url }}" alt="" loading="lazy">
+        {% if owned %}<span class="badge">In library</span>{% endif %}
+    </div>
+    <div class="game-card-body">
+        <h3>{{ game.title }}</h3>
+        <p>{{ game.primary_genre or 'Game' }}</p>
+        <div class="game-card-meta">
+            <span class="price">{{ game.price|inr }}</span>
+            {% if game.avg_rating %}<span class="rating" title="{{ game.review_count }} review{{ '' if game.review_count == 1 else 's' }}">★ {{ game.avg_rating }}</span>{% endif %}
+        </div>
+    </div>
+</a>
+{% endmacro %}
+
+{% macro stars(rating) %}
+<span class="stars" role="img" aria-label="{{ rating }} out of 5">{{ '★' * rating }}<span class="stars-empty">{{ '★' * (5 - rating) }}</span></span>
+{% endmacro %}

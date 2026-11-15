@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% from "_macros.html" import game_card %}
+
+{% block content %}
+<div class="page">
+    {% if featured %}
+    <section class="hero" id="heroCarousel" aria-roledescription="carousel" aria-label="Featured games">
+        {% for game in featured %}
+        <a class="hero-slide{% if loop.first %} active{% endif %}" href="{{ url_for('main.game', game_id=game.game_id) }}">
+            <img src="{{ game.image_url|hero_image }}" data-fallback="{{ game.image_url }}" alt="" {% if not loop.first %}loading="lazy"{% endif %}>
+            <div class="hero-caption">
+                <span class="eyebrow">Featured</span>
+                <h1>{{ game.title }}</h1>
+                <p>{{ game.primary_genre or 'Game' }} · {{ game.price|inr }}</p>
+            </div>
+        </a>
+        {% endfor %}
+
+        {% if featured|length > 1 %}
+        <button type="button" class="hero-arrow hero-prev" aria-label="Previous game">&#10094;</button>
+        <button type="button" class="hero-arrow hero-next" aria-label="Next game">&#10095;</button>
+        <div class="hero-dots">
+            {% for game in featured %}
+            <button type="button" class="hero-dot{% if loop.first %} active{% endif %}" aria-label="Show {{ game.title }}"></button>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </section>
+    {% endif %}
+
+    {% for title, query, games in sections %}
+    <section class="section">
+        <div class="section-heading">
+            <h2>{{ title }}</h2>
+            <a href="{{ url_for('main.store') }}?{{ query }}">See all</a>
+        </div>
+        <div class="card-row">
+            {% for game in games %}
+                {{ game_card(game, game.game_id in owned_ids) }}
+            {% endfor %}
+        </div>
+    </section>
+    {% else %}
+    <div class="empty-state">
+        <h2>The store is empty</h2>
+        <p>Load the catalog with <code>python -m scripts.seed</code>.</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

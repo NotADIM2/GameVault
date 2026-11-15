@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% from "_macros.html" import game_card %}
+
+{% block title %}Store | GameVault{% endblock %}
+
+{% block content %}
+<div class="page store-layout">
+
+    <aside class="genre-sidebar" aria-label="Genres">
+        <h2>Genres</h2>
+        <div class="genre-list" id="genreList">
+            <button type="button" class="genre-btn active" data-genre="">All genres</button>
+            {% for genre in genres %}
+            <button type="button" class="genre-btn" data-genre="{{ genre }}">{{ genre }}</button>
+            {% endfor %}
+        </div>
+    </aside>
+
+    <section class="store-content">
+        <div class="store-toolbar">
+            <input type="search" id="storeSearch" class="input" placeholder="Search games or genres…" aria-label="Search games">
+
+            <select id="storePrice" class="input" aria-label="Price">
+                <option value="">Any price</option>
+                <option value="free">Free to play</option>
+                <option value="under-1000">Under ₹1,000</option>
+                <option value="under-2000">Under ₹2,000</option>
+            </select>
+
+            <select id="storeSort" class="input" aria-label="Sort by">
+                <option value="">Title A–Z</option>
+                <option value="popular">Most popular</option>
+                <option value="rating">Top rated</option>
+                <option value="new">Newest</option>
+                <option value="price-asc">Price: low to high</option>
+                <option value="price-desc">Price: high to low</option>
+            </select>
+        </div>
+
+        <p class="store-count" id="storeCount" aria-live="polite">{{ games|length }} games</p>
+
+        <div id="storeGrid" class="card-grid">
+            {% for game in games %}
+                {{ game_card(game, game.game_id in owned_ids) }}
+            {% endfor %}
+        </div>
+
+        <div class="empty-state" id="storeEmpty" hidden>
+            <h2>No games match</h2>
+            <p>Try a different search, genre or price.</p>
+            <button type="button" class="btn btn-ghost" id="storeReset">Clear filters</button>
+        </div>
+    </section>
+
+</div>
+{% endblock %}

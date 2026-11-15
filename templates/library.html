@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}Library | GameVault{% endblock %}
+{% block body_class %}library-page{% endblock %}
+
+{% block content %}
+{% if not games %}
+<div class="page">
+    <div class="empty-state">
+        <h2>Your library is empty</h2>
+        <p>Games you buy or add for free show up here.</p>
+        <a class="btn btn-primary" href="{{ url_for('main.store') }}">Browse the store</a>
+    </div>
+</div>
+{% else %}
+<div class="library" id="library" data-selected="{{ request.args.get('game', '') }}">
+
+    <aside class="library-sidebar">
+        <input type="search" id="librarySearch" class="input" placeholder="Search library…" aria-label="Search library">
+        <ul class="library-list">
+            {% for game in games %}
+            <li>
+                <button type="button" class="library-item" data-id="{{ game.game_id }}" data-title="{{ game.title|lower }}">
+                    <img src="{{ game.image_url }}" alt="" loading="lazy">
+                    <span>{{ game.title }}</span>
+                </button>
+            </li>
+            {% endfor %}
+        </ul>
+    </aside>
+
+    <div class="library-main">
+        {% for game in games %}
+        <article class="library-detail" data-id="{{ game.game_id }}" hidden>
+            <header class="library-banner">
+                <img src="{{ game.image_url|hero_image }}" data-fallback="{{ game.image_url }}" alt="" loading="lazy">
+                <div class="library-banner-content">
+                    <h1>{{ game.title }}</h1>
+                    <div class="library-actions">
+                        <button type="button" class="btn btn-play" data-play="{{ game.game_id }}" data-title="{{ game.title }}">▶ Play</button>
+                        <dl class="stats-bar">
+                            <div><dt>Play time</dt><dd>{{ game.hours }} hrs</dd></div>
+                            <div><dt>Last played</dt><dd data-last-played>{{ game.last_played|date('Never') }}</dd></div>
+                            <div><dt>Purchased</dt><dd>{{ game.purchase_date|date }}</dd></div>
+                        </dl>
+                    </div>
+                </div>
+            </header>
+
+            <div class="library-panels">
+                <section class="panel">
+                    <h2>About the game</h2>
+                    <p>{{ game.description or 'No description available for this game yet.' }}</p>
+                    <a class="btn btn-ghost btn-sm" href="{{ url_for('main.game', game_id=game.game_id) }}#reviews">Store page &amp; reviews</a>
+                </section>
+
+                <section class="panel">
+                    <h2>Details</h2>
+                    <dl class="detail-list">
+                        <div><dt>Developer</dt><dd>{{ game.developer or '—' }}</dd></div>
+                        <div><dt>Genres</dt><dd>{{ game.genres|join(', ') or '—' }}</dd></div>
+                        <div><dt>Price paid</dt><dd>{{ game.price_paid|inr }}</dd></div>
+                    </dl>
+                </section>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+
+</div>
+
+<dialog id="launcher" class="launcher">
+    <h2 id="launcherTitle">Launching game</h2>
+    <div class="spinner" aria-hidden="true"></div>
+    <p id="launcherStatus" class="muted" aria-live="polite">Initializing launch sequence…</p>
+    <div class="progress"><div id="launcherProgress" class="progress-bar"></div></div>
+    <form method="dialog">
+        <button class="btn btn-danger" id="launcherClose" hidden>Close game</button>
+    </form>
+</dialog>
+{% endif %}
+{% endblock %}

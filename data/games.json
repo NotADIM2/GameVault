@@ -1,0 +1,1375 @@
+{
+  "developers": [
+    {
+      "name": "343 Industries",
+      "country": "USA"
+    },
+    {
+      "name": "Arrowhead Game Studios",
+      "country": "Sweden"
+    },
+    {
+      "name": "BeamNG",
+      "country": "Germany"
+    },
+    {
+      "name": "Bethesda Game Studios",
+      "country": "USA"
+    },
+    {
+      "name": "Big Ant Studios",
+      "country": "Australia"
+    },
+    {
+      "name": "Blizzard Entertainment",
+      "country": "USA"
+    },
+    {
+      "name": "Bungie",
+      "country": "USA"
+    },
+    {
+      "name": "CD PROJEKT RED",
+      "country": "Poland"
+    },
+    {
+      "name": "Capcom",
+      "country": "Japan"
+    },
+    {
+      "name": "Codemasters",
+      "country": "UK"
+    },
+    {
+      "name": "ConcernedApe",
+      "country": "USA"
+    },
+    {
+      "name": "Criterion Games",
+      "country": "UK"
+    },
+    {
+      "name": "DICE",
+      "country": "Sweden"
+    },
+    {
+      "name": "Digital Extremes",
+      "country": "Canada"
+    },
+    {
+      "name": "EA Vancouver",
+      "country": "Canada"
+    },
+    {
+      "name": "Epic Games",
+      "country": "USA"
+    },
+    {
+      "name": "FromSoftware",
+      "country": "Japan"
+    },
+    {
+      "name": "Game Science",
+      "country": "China"
+    },
+    {
+      "name": "Ghost Games",
+      "country": "Sweden"
+    },
+    {
+      "name": "Grinding Gear Games",
+      "country": "New Zealand"
+    },
+    {
+      "name": "Guerrilla Games",
+      "country": "Netherlands"
+    },
+    {
+      "name": "Gunfire Games",
+      "country": "USA"
+    },
+    {
+      "name": "Hangar 13",
+      "country": "USA"
+    },
+    {
+      "name": "Hello Games",
+      "country": "UK"
+    },
+    {
+      "name": "HoYoverse",
+      "country": "China"
+    },
+    {
+      "name": "IO Interactive",
+      "country": "Denmark"
+    },
+    {
+      "name": "Infinity Ward",
+      "country": "USA"
+    },
+    {
+      "name": "Insomniac Games",
+      "country": "USA"
+    },
+    {
+      "name": "Ivory Tower",
+      "country": "France"
+    },
+    {
+      "name": "Kinetic Games",
+      "country": "UK"
+    },
+    {
+      "name": "Kunos Simulazioni",
+      "country": "Italy"
+    },
+    {
+      "name": "Larian Studios",
+      "country": "Belgium"
+    },
+    {
+      "name": "Maddy Makes Games",
+      "country": "Canada"
+    },
+    {
+      "name": "Mediatonic",
+      "country": "UK"
+    },
+    {
+      "name": "Naughty Dog",
+      "country": "USA"
+    },
+    {
+      "name": "OVERKILL Software",
+      "country": "Sweden"
+    },
+    {
+      "name": "PUBG Studios",
+      "country": "South Korea"
+    },
+    {
+      "name": "Playground Games",
+      "country": "UK"
+    },
+    {
+      "name": "Pocketpair",
+      "country": "Japan"
+    },
+    {
+      "name": "Psyonix",
+      "country": "USA"
+    },
+    {
+      "name": "Quantic Dream",
+      "country": "France"
+    },
+    {
+      "name": "Rare",
+      "country": "UK"
+    },
+    {
+      "name": "Remedy Entertainment",
+      "country": "Finland"
+    },
+    {
+      "name": "Respawn Entertainment",
+      "country": "USA"
+    },
+    {
+      "name": "Riot Games",
+      "country": "USA"
+    },
+    {
+      "name": "Rockstar Games",
+      "country": "USA"
+    },
+    {
+      "name": "Round8 Studio",
+      "country": "South Korea"
+    },
+    {
+      "name": "SCS Software",
+      "country": "Czech Republic"
+    },
+    {
+      "name": "Santa Monica Studio",
+      "country": "USA"
+    },
+    {
+      "name": "Sledgehammer Games",
+      "country": "USA"
+    },
+    {
+      "name": "Studio MDHR",
+      "country": "Canada"
+    },
+    {
+      "name": "Sucker Punch Productions",
+      "country": "USA"
+    },
+    {
+      "name": "Ubisoft Bordeaux",
+      "country": "France"
+    },
+    {
+      "name": "Ubisoft Montreal",
+      "country": "Canada"
+    },
+    {
+      "name": "Ubisoft Toronto",
+      "country": "Canada"
+    },
+    {
+      "name": "United Front Games",
+      "country": "Canada"
+    },
+    {
+      "name": "Unknown Worlds Entertainment",
+      "country": "USA"
+    },
+    {
+      "name": "Valve",
+      "country": "USA"
+    },
+    {
+      "name": "Visual Concepts",
+      "country": "USA"
+    },
+    {
+      "name": "Zeekerss",
+      "country": "USA"
+    },
+    {
+      "name": "id Software",
+      "country": "USA"
+    }
+  ],
+  "games": [
+    {
+      "id": 1,
+      "title": "Celeste",
+      "price": 399,
+      "genres": [
+        "Adventure",
+        "Indie"
+      ],
+      "developer": "Maddy Makes Games",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/504230/header.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Stardew Valley",
+      "price": 599,
+      "genres": [
+        "Simulation",
+        "Indie"
+      ],
+      "developer": "ConcernedApe",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/413150/header.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Cuphead",
+      "price": 1299,
+      "genres": [
+        "Adventure",
+        "Indie"
+      ],
+      "developer": "Studio MDHR",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/268910/header.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Forza Horizon 5",
+      "price": 2499,
+      "genres": [
+        "Racing"
+      ],
+      "developer": "Playground Games",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1551360/header.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Need for Speed Heat",
+      "price": 1999,
+      "genres": [
+        "Racing"
+      ],
+      "developer": "Ghost Games",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1222680/header.jpg"
+    },
+    {
+      "id": 6,
+      "title": "NFS Unbound",
+      "price": 2299,
+      "genres": [
+        "Racing"
+      ],
+      "developer": "Criterion Games",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1846380/header.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Assetto Corsa",
+      "price": 1599,
+      "genres": [
+        "Racing"
+      ],
+      "developer": "Kunos Simulazioni",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/244210/header.jpg"
+    },
+    {
+      "id": 8,
+      "title": "F1 24",
+      "price": 2999,
+      "genres": [
+        "Sports"
+      ],
+      "developer": "Codemasters",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2488620/header.jpg"
+    },
+    {
+      "id": 9,
+      "title": "The Crew Motorfest",
+      "price": 2199,
+      "genres": [
+        "Racing"
+      ],
+      "developer": "Ivory Tower",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2698940/header.jpg"
+    },
+    {
+      "id": 10,
+      "title": "BeamNG.drive",
+      "price": 1999,
+      "genres": [
+        "Simulation"
+      ],
+      "developer": "BeamNG",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/284160/header.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Euro Truck Simulator 2",
+      "price": 999,
+      "genres": [
+        "Simulation"
+      ],
+      "developer": "SCS Software",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/227300/header.jpg"
+    },
+    {
+      "id": 12,
+      "title": "American Truck Simulator",
+      "price": 999,
+      "genres": [
+        "Simulation"
+      ],
+      "developer": "SCS Software",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/270880/header.jpg"
+    },
+    {
+      "id": 13,
+      "title": "EA FC 25",
+      "price": 2799,
+      "genres": [
+        "Sports",
+        "Multiplayer"
+      ],
+      "developer": "EA Vancouver",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2669320/header.jpg"
+    },
+    {
+      "id": 14,
+      "title": "NBA 2K25",
+      "price": 2999,
+      "genres": [
+        "Sports",
+        "Multiplayer"
+      ],
+      "developer": "Visual Concepts",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2878980/header.jpg"
+    },
+    {
+      "id": 15,
+      "title": "WWE 2K24",
+      "price": 2799,
+      "genres": [
+        "Sports",
+        "Multiplayer"
+      ],
+      "developer": "Visual Concepts",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2315690/header.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Cricket 24",
+      "price": 1599,
+      "genres": [
+        "Sports",
+        "Multiplayer"
+      ],
+      "developer": "Big Ant Studios",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2358260/header.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Call of Duty MW3",
+      "price": 2999,
+      "genres": [
+        "FPS",
+        "Multiplayer"
+      ],
+      "developer": "Sledgehammer Games",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/capsule_616x353.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Warzone 2",
+      "price": 0,
+      "genres": [
+        "FPS",
+        "Multiplayer"
+      ],
+      "developer": "Infinity Ward",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/header.jpg"
+    },
+    {
+      "id": 19,
+      "title": "Counter-Strike 2",
+      "price": 0,
+      "genres": [
+        "FPS",
+        "Multiplayer"
+      ],
+      "developer": "Valve",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg"
+    },
+    {
+      "id": 20,
+      "title": "Valorant",
+      "price": 0,
+      "genres": [
+        "FPS",
+        "Multiplayer"
+      ],
+      "developer": "Riot Games",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc94132edcff93222/6274457e5e3b1c67623910c2/Valorant_2022_EP4_KeyArt.jpg"
+    },
+    {
+      "id": 21,
+      "title": "Rainbow Six Siege",
+      "price": 0,
+      "genres": [
+        "FPS",
+        "Multiplayer"
+      ],
+      "developer": "Ubisoft Montreal",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/359550/header.jpg"
+    },
+    {
+      "id": 22,
+      "title": "Battlefield 2042",
+      "price": 0,
+      "genres": [
+        "FPS",
+        "Multiplayer"
+      ],
+      "developer": "DICE",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1517290/header.jpg"
+    },
+    {
+      "id": 23,
+      "title": "Apex Legends",
+      "price": 0,
+      "genres": [
+        "FPS",
+        "Multiplayer"
+      ],
+      "developer": "Respawn Entertainment",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/header.jpg"
+    },
+    {
+      "id": 24,
+      "title": "Fortnite",
+      "price": 0,
+      "genres": [
+        "Battle Royale",
+        "Multiplayer"
+      ],
+      "developer": "Epic Games",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://images.igdb.com/igdb/image/upload/t_1080p/co2eqp.jpg"
+    },
+    {
+      "id": 25,
+      "title": "PUBG Battlegrounds",
+      "price": 0,
+      "genres": [
+        "Battle Royale",
+        "Multiplayer"
+      ],
+      "developer": "PUBG Studios",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/578080/header.jpg"
+    },
+    {
+      "id": 26,
+      "title": "Overwatch 2",
+      "price": 0,
+      "genres": [
+        "FPS",
+        "Multiplayer"
+      ],
+      "developer": "Blizzard Entertainment",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2357570/capsule_616x353.jpg"
+    },
+    {
+      "id": 27,
+      "title": "Destiny 2",
+      "price": 0,
+      "genres": [
+        "FPS",
+        "Multiplayer"
+      ],
+      "developer": "Bungie",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1085660/header.jpg"
+    },
+    {
+      "id": 28,
+      "title": "Halo Infinite",
+      "price": 0,
+      "genres": [
+        "FPS",
+        "Multiplayer"
+      ],
+      "developer": "343 Industries",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1240440/header.jpg"
+    },
+    {
+      "id": 29,
+      "title": "Doom Eternal",
+      "price": 1999,
+      "genres": [
+        "FPS"
+      ],
+      "developer": "id Software",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/782330/header.jpg"
+    },
+    {
+      "id": 30,
+      "title": "Doom 2016",
+      "price": 1299,
+      "genres": [
+        "FPS"
+      ],
+      "developer": "id Software",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/379720/header.jpg"
+    },
+    {
+      "id": 31,
+      "title": "Far Cry 6",
+      "price": 1999,
+      "genres": [
+        "Action"
+      ],
+      "developer": "Ubisoft Toronto",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2369390/header.jpg"
+    },
+    {
+      "id": 32,
+      "title": "Far Cry 5",
+      "price": 1499,
+      "genres": [
+        "Action"
+      ],
+      "developer": "Ubisoft Montreal",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/552520/header.jpg"
+    },
+    {
+      "id": 33,
+      "title": "Watch Dogs Legion",
+      "price": 1799,
+      "genres": [
+        "Action"
+      ],
+      "developer": "Ubisoft Toronto",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2239550/header.jpg"
+    },
+    {
+      "id": 34,
+      "title": "Watch Dogs 2",
+      "price": 999,
+      "genres": [
+        "Action"
+      ],
+      "developer": "Ubisoft Montreal",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/447040/header.jpg"
+    },
+    {
+      "id": 35,
+      "title": "Spider-Man Remastered",
+      "price": 2399,
+      "genres": [
+        "Action"
+      ],
+      "developer": "Insomniac Games",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1817070/header.jpg"
+    },
+    {
+      "id": 36,
+      "title": "Spider-Man Miles Morales",
+      "price": 1999,
+      "genres": [
+        "Action"
+      ],
+      "developer": "Insomniac Games",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1817190/header.jpg"
+    },
+    {
+      "id": 37,
+      "title": "God of War",
+      "price": 1699,
+      "genres": [
+        "Action"
+      ],
+      "developer": "Santa Monica Studio",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/header.jpg"
+    },
+    {
+      "id": 38,
+      "title": "God of War Ragnarok",
+      "price": 2399,
+      "genres": [
+        "Action"
+      ],
+      "developer": "Santa Monica Studio",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2322010/header.jpg"
+    },
+    {
+      "id": 39,
+      "title": "Horizon Zero Dawn",
+      "price": 1499,
+      "genres": [
+        "Action"
+      ],
+      "developer": "Guerrilla Games",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1151640/header.jpg"
+    },
+    {
+      "id": 40,
+      "title": "Horizon Forbidden West",
+      "price": 2199,
+      "genres": [
+        "Action"
+      ],
+      "developer": "Guerrilla Games",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2420110/header.jpg"
+    },
+    {
+      "id": 41,
+      "title": "Ghost of Tsushima",
+      "price": 1999,
+      "genres": [
+        "Adventure"
+      ],
+      "developer": "Sucker Punch Productions",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2215430/header.jpg"
+    },
+    {
+      "id": 42,
+      "title": "Sekiro: Shadows Die Twice",
+      "price": 1999,
+      "genres": [
+        "Action"
+      ],
+      "developer": "FromSoftware",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/814380/header.jpg"
+    },
+    {
+      "id": 43,
+      "title": "Dark Souls 3",
+      "price": 1299,
+      "genres": [
+        "RPG"
+      ],
+      "developer": "FromSoftware",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/374320/header.jpg"
+    },
+    {
+      "id": 44,
+      "title": "Lies of P",
+      "price": 2199,
+      "genres": [
+        "Action"
+      ],
+      "developer": "Round8 Studio",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1627720/header.jpg"
+    },
+    {
+      "id": 45,
+      "title": "Black Myth Wukong",
+      "price": 2399,
+      "genres": [
+        "Action"
+      ],
+      "developer": "Game Science",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2358720/header.jpg"
+    },
+    {
+      "id": 46,
+      "title": "Monster Hunter World",
+      "price": 1699,
+      "genres": [
+        "RPG",
+        "Multiplayer"
+      ],
+      "developer": "Capcom",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/582010/header.jpg"
+    },
+    {
+      "id": 47,
+      "title": "Monster Hunter Wilds",
+      "price": 2499,
+      "genres": [
+        "RPG",
+        "Multiplayer"
+      ],
+      "developer": "Capcom",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2246340/header.jpg"
+    },
+    {
+      "id": 48,
+      "title": "Palworld",
+      "price": 1399,
+      "genres": [
+        "RPG",
+        "Multiplayer"
+      ],
+      "developer": "Pocketpair",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1623730/header.jpg"
+    },
+    {
+      "id": 49,
+      "title": "Genshin Impact",
+      "price": 0,
+      "genres": [
+        "RPG"
+      ],
+      "developer": "HoYoverse",
+      "release_date": null,
+      "description": null,
+      "image_url": "/static/images/placeholder.svg"
+    },
+    {
+      "id": 50,
+      "title": "Honkai: Star Rail",
+      "price": 0,
+      "genres": [
+        "RPG"
+      ],
+      "developer": "HoYoverse",
+      "release_date": null,
+      "description": null,
+      "image_url": "/static/images/placeholder.svg"
+    },
+    {
+      "id": 51,
+      "title": "League of Legends",
+      "price": 0,
+      "genres": [
+        "MOBA",
+        "Strategy",
+        "Multiplayer"
+      ],
+      "developer": "Riot Games",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://ddragon.leagueoflegends.com/cdn/img/champion-splash/Jinx_0.jpg"
+    },
+    {
+      "id": 52,
+      "title": "Dota 2",
+      "price": 0,
+      "genres": [
+        "MOBA",
+        "Strategy",
+        "Multiplayer"
+      ],
+      "developer": "Valve",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/570/header.jpg"
+    },
+    {
+      "id": 53,
+      "title": "Rocket League",
+      "price": 0,
+      "genres": [
+        "Sports",
+        "Multiplayer"
+      ],
+      "developer": "Psyonix",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/252950/header.jpg"
+    },
+    {
+      "id": 54,
+      "title": "Fall Guys",
+      "price": 0,
+      "genres": [
+        "Action",
+        "Multiplayer"
+      ],
+      "developer": "Mediatonic",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1097150/header.jpg"
+    },
+    {
+      "id": 55,
+      "title": "Phasmophobia",
+      "price": 599,
+      "genres": [
+        "Horror",
+        "Indie",
+        "Multiplayer"
+      ],
+      "developer": "Kinetic Games",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/739630/header.jpg"
+    },
+    {
+      "id": 56,
+      "title": "Lethal Company",
+      "price": 499,
+      "genres": [
+        "Horror",
+        "Indie",
+        "Multiplayer"
+      ],
+      "developer": "Zeekerss",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1966720/header.jpg"
+    },
+    {
+      "id": 57,
+      "title": "Sea of Thieves",
+      "price": 1299,
+      "genres": [
+        "Adventure",
+        "Multiplayer"
+      ],
+      "developer": "Rare",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1172620/header.jpg"
+    },
+    {
+      "id": 58,
+      "title": "No Man's Sky",
+      "price": 1599,
+      "genres": [
+        "Sci-Fi",
+        "Multiplayer"
+      ],
+      "developer": "Hello Games",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/275850/header.jpg"
+    },
+    {
+      "id": 59,
+      "title": "Subnautica",
+      "price": 1999,
+      "genres": [
+        "Survival"
+      ],
+      "developer": "Unknown Worlds Entertainment",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/264710/header.jpg"
+    },
+    {
+      "id": 60,
+      "title": "The Last of Us Part 1",
+      "price": 2399,
+      "genres": [
+        "Action"
+      ],
+      "developer": "Naughty Dog",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1888930/header.jpg"
+    },
+    {
+      "id": 61,
+      "title": "Uncharted: Legacy of Thieves",
+      "price": 1899,
+      "genres": [
+        "Adventure"
+      ],
+      "developer": "Naughty Dog",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1659420/header.jpg"
+    },
+    {
+      "id": 62,
+      "title": "Detroit: Become Human",
+      "price": 1499,
+      "genres": [
+        "Adventure"
+      ],
+      "developer": "Quantic Dream",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1222140/header.jpg"
+    },
+    {
+      "id": 63,
+      "title": "Hitman 3",
+      "price": 2099,
+      "genres": [
+        "Stealth"
+      ],
+      "developer": "IO Interactive",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1659040/header.jpg"
+    },
+    {
+      "id": 64,
+      "title": "Mafia: Definitive Edition",
+      "price": 1999,
+      "genres": [
+        "Action"
+      ],
+      "developer": "Hangar 13",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1030840/header.jpg"
+    },
+    {
+      "id": 65,
+      "title": "Sleeping Dogs",
+      "price": 999,
+      "genres": [
+        "Action"
+      ],
+      "developer": "United Front Games",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/307690/header.jpg"
+    },
+    {
+      "id": 66,
+      "title": "Max Payne 3",
+      "price": 999,
+      "genres": [
+        "Action"
+      ],
+      "developer": "Rockstar Games",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/204100/header.jpg"
+    },
+    {
+      "id": 67,
+      "title": "Portal 2",
+      "price": 799,
+      "genres": [
+        "Puzzle"
+      ],
+      "developer": "Valve",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/620/header.jpg"
+    },
+    {
+      "id": 68,
+      "title": "Left 4 Dead 2",
+      "price": 0,
+      "genres": [
+        "Horror",
+        "Multiplayer"
+      ],
+      "developer": "Valve",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/550/header.jpg"
+    },
+    {
+      "id": 69,
+      "title": "Payday 2",
+      "price": 0,
+      "genres": [
+        "Action",
+        "Multiplayer"
+      ],
+      "developer": "OVERKILL Software",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/218620/header.jpg"
+    },
+    {
+      "id": 70,
+      "title": "Remnant 2",
+      "price": 1799,
+      "genres": [
+        "RPG",
+        "Multiplayer"
+      ],
+      "developer": "Gunfire Games",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1282100/header.jpg"
+    },
+    {
+      "id": 71,
+      "title": "Diablo IV",
+      "price": 2599,
+      "genres": [
+        "RPG",
+        "Multiplayer"
+      ],
+      "developer": "Blizzard Entertainment",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2344520/header.jpg"
+    },
+    {
+      "id": 72,
+      "title": "Path of Exile",
+      "price": 0,
+      "genres": [
+        "RPG",
+        "Multiplayer"
+      ],
+      "developer": "Grinding Gear Games",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/238960/header.jpg"
+    },
+    {
+      "id": 73,
+      "title": "Warframe",
+      "price": 0,
+      "genres": [
+        "FPS",
+        "Multiplayer"
+      ],
+      "developer": "Digital Extremes",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/230410/header.jpg"
+    },
+    {
+      "id": 74,
+      "title": "Helldivers 2",
+      "price": 1199,
+      "genres": [
+        "Action",
+        "Multiplayer"
+      ],
+      "developer": "Arrowhead Game Studios",
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/553850/header.jpg"
+    },
+    {
+      "id": 75,
+      "title": "Cyber Chronicles Online",
+      "price": 0,
+      "genres": [
+        "MMORPG",
+        "Multiplayer"
+      ],
+      "developer": null,
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1139900/header.jpg"
+    },
+    {
+      "id": 76,
+      "title": "Shadow Legends",
+      "price": 1399,
+      "genres": [
+        "RPG",
+        "Multiplayer"
+      ],
+      "developer": null,
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2333480/header.jpg"
+    },
+    {
+      "id": 77,
+      "title": "Neon Nexus",
+      "price": 1699,
+      "genres": [
+        "Sci-Fi"
+      ],
+      "developer": null,
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1149200/header.jpg"
+    },
+    {
+      "id": 78,
+      "title": "Mystical Quest",
+      "price": 999,
+      "genres": [
+        "Adventure"
+      ],
+      "developer": null,
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1954200/header.jpg"
+    },
+    {
+      "id": 79,
+      "title": "Pixel Paradise",
+      "price": 599,
+      "genres": [
+        "Simulation",
+        "Indie"
+      ],
+      "developer": null,
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/105600/header.jpg"
+    },
+    {
+      "id": 80,
+      "title": "Final Showdown",
+      "price": 1999,
+      "genres": [
+        "Action",
+        "Multiplayer"
+      ],
+      "developer": null,
+      "release_date": null,
+      "description": null,
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2073850/header.jpg"
+    },
+    {
+      "id": 81,
+      "title": "Elden Ring",
+      "price": 2399,
+      "genres": [
+        "RPG"
+      ],
+      "developer": "FromSoftware",
+      "release_date": "2022-02-25",
+      "description": "Rise, Tarnished, and let grace guide thee. Explore a vast open world of breathtaking design, fight imposing enemies and bosses, and uncover mysteries in a world full of danger and wonder.",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg"
+    },
+    {
+      "id": 82,
+      "title": "Grand Theft Auto V",
+      "price": 1499,
+      "genres": [
+        "Action"
+      ],
+      "developer": "Rockstar Games",
+      "release_date": "2015-04-14",
+      "description": "When a young street hustler, a retired bank robber and a terrifying psychopath find themselves entangled with some of the most frightening and deranged elements of the underworld, they must pull off a series of dangerous heists.",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg"
+    },
+    {
+      "id": 83,
+      "title": "Resident Evil 4",
+      "price": 1199,
+      "genres": [
+        "Horror"
+      ],
+      "developer": "Capcom",
+      "release_date": "2023-03-24",
+      "description": "Survival is just the beginning. Six years have passed since the biological disaster in Raccoon City. Leon S. Kennedy, one of the survivors, has been sent to rescue the president's kidnapped daughter.",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2050650/header.jpg"
+    },
+    {
+      "id": 84,
+      "title": "Cyberpunk 2077",
+      "price": 1999,
+      "genres": [
+        "RPG"
+      ],
+      "developer": "CD PROJEKT RED",
+      "release_date": "2020-12-10",
+      "description": "Cyberpunk 2077 is an open-world, action-adventure RPG set in the megalopolis of Night City, where you play as a cyberpunk mercenary wrapped up in a do-or-die fight for survival.",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg"
+    },
+    {
+      "id": 85,
+      "title": "The Witcher 3",
+      "price": 999,
+      "genres": [
+        "RPG"
+      ],
+      "developer": "CD PROJEKT RED",
+      "release_date": "2015-05-18",
+      "description": "You are Geralt of Rivia, mercenary monster slayer. Before you stands a war-torn, monster-infested continent you can explore at will. Your current contract? Tracking down Ciri — the Child of Prophecy.",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg"
+    },
+    {
+      "id": 86,
+      "title": "Assassin's Creed Mirage",
+      "price": 1799,
+      "genres": [
+        "Adventure"
+      ],
+      "developer": "Ubisoft Bordeaux",
+      "release_date": "2023-10-05",
+      "description": "Experience the story of Basim, a cunning street thief with nightmarish visions, seeking answers and justice as he navigates the bustling streets of ninth-century Baghdad.",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/3035570/header.jpg"
+    },
+    {
+      "id": 87,
+      "title": "Baldur's Gate 3",
+      "price": 2299,
+      "genres": [
+        "RPG"
+      ],
+      "developer": "Larian Studios",
+      "release_date": "2023-08-03",
+      "description": "Gather your party, and return to the Forgotten Realms in a tale of fellowship and betrayal, sacrifice and survival, and the lure of absolute power.",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/header.jpg"
+    },
+    {
+      "id": 88,
+      "title": "Starfield",
+      "price": 2599,
+      "genres": [
+        "RPG"
+      ],
+      "developer": "Bethesda Game Studios",
+      "release_date": "2023-09-06",
+      "description": "Starfield is the first new universe in over 25 years from Bethesda Game Studios, the award-winning creators of The Elder Scrolls V: Skyrim and Fallout 4.",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1716740/header.jpg"
+    },
+    {
+      "id": 89,
+      "title": "Alan Wake 2",
+      "price": 2199,
+      "genres": [
+        "Horror"
+      ],
+      "developer": "Remedy Entertainment",
+      "release_date": "2023-10-27",
+      "description": "A string of ritualistic murders threatens Bright Falls, an Alder Creek community surrounded by the Pacific Northwest wilderness. Alan Wake, a trapped writer, writes a dark story to shape reality.",
+      "image_url": "/static/images/placeholder.svg"
+    },
+    {
+      "id": 90,
+      "title": "Dragon's Dogma 2",
+      "price": 2399,
+      "genres": [
+        "RPG"
+      ],
+      "developer": "Capcom",
+      "release_date": "2024-03-22",
+      "description": "Dragon’s Dogma 2 is a single player, narrative driven action-RPG that challenges the players to choose their own experience – from the appearance of their Arisen, their vocation, their party, and more.",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2054970/header.jpg"
+    }
+  ]
+}
