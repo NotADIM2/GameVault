@@ -130,6 +130,7 @@ No setup needed: these only change `data/games.json`.
 
 | Task | Issue |
 |---|---|
+| **Add games from a themed list**: 150 games to add, from indie favourites to fighting games, each with its id reserved | [Add games issues](https://github.com/NotADIM2/GameVault/issues?q=is%3Aopen+label%3Acatalog+%22Add+games%22) |
 | **Add your favourite game** to the catalog | [#9](https://github.com/NotADIM2/GameVault/issues/9) |
 | **Write descriptions and release dates**: 80 of 90 games are missing them, split into batches by genre | [#2](https://github.com/NotADIM2/GameVault/issues/2) · [#3](https://github.com/NotADIM2/GameVault/issues/3) · [#4](https://github.com/NotADIM2/GameVault/issues/4) · [#5](https://github.com/NotADIM2/GameVault/issues/5) · [#6](https://github.com/NotADIM2/GameVault/issues/6) |
 | **Find artwork** for Genshin Impact, Honkai: Star Rail and Alan Wake 2 | [#7](https://github.com/NotADIM2/GameVault/issues/7) |
@@ -148,6 +149,8 @@ These need the app running (see [Getting started](#getting-started)).
 | Full-text search with PostgreSQL | [#14](https://github.com/NotADIM2/GameVault/issues/14) |
 | Rate limiting for login and sign-up | [#16](https://github.com/NotADIM2/GameVault/issues/16) |
 | Automated tests for the routes and database queries | open an issue |
+
+There are more tasks for frontend, backend, database and docs on the [project board](https://github.com/users/NotADIM2/projects/3), and you can filter issues by the `catalog`, `frontend`, `backend` and `database` labels.
 
 Have your own idea? [Suggest a feature](https://github.com/NotADIM2/GameVault/issues/new/choose). For a large feature, comment on the issue before starting so we can agree on the approach first.
 
