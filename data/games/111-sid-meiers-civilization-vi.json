@@ -1,0 +1,10 @@
+{
+  "id": 111,
+  "title": "Sid Meier's Civilization VI",
+  "price": 1249,
+  "genres": ["Strategy"],
+  "developer": "Firaxis Games",
+  "release_date": "2016-10-21",
+  "description": "Build an empire to stand the test of time by founding cities, researching technologies, and leading your civilization from the stone age to the space age.",
+  "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/289070/header.jpg"
+}
