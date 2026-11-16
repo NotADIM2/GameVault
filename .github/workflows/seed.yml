@@ -1,0 +1,44 @@
+name: Seed
+
+# Loads the catalog into Supabase after it changes on main, so merged games show up on the site.
+# Only runs on pushes to main (never on pull requests), so code from a pull request can't reach
+# the credentials until a maintainer has reviewed and merged it. The credentials live in the
+# `catalog-seed` environment, which only accepts the main branch, and are passed to the seed
+# step alone.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
+      - "scripts/seed.py"
+      - "scripts/check_catalog.py"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Never run two seeds at once, and never cancel one halfway through.
+concurrency:
+  group: seed
+  cancel-in-progress: false
+
+jobs:
+  seed:
+    name: Seed
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment: catalog-seed
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Load the catalog into Supabase
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: python -m scripts.seed
