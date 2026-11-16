@@ -75,6 +75,8 @@ python app.py
 
 Open http://127.0.0.1:5000. Set `FLASK_DEBUG=1` in `.env` for auto-reload while developing.
 
+On GitHub, the **Seed** workflow re-runs the seed whenever a change to `data/` lands on `main`, so merged games appear without a manual step. It reads `SUPABASE_URL` and `SUPABASE_KEY` from the `catalog-seed` environment's secrets (Settings → Environments), which only the `main` branch can use. You can also start it by hand from the Actions tab.
+
 ## Project structure
 
 ```
