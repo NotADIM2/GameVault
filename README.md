@@ -75,6 +75,8 @@ python app.py
 
 Open http://127.0.0.1:5000. Set `FLASK_DEBUG=1` in `.env` for auto-reload while developing.
 
+To test the library and reviews without registering and buying games by hand, run `python -m scripts.seed --demo` instead. It also creates two sample accounts, `player@gamevault.test` and `critic@gamevault.test`, with the password `gamevault-demo`. They own, play and review a few games. Only use `--demo` on your own development project, never on a live site, because anyone can read that password here.
+
 On GitHub, the **Seed** workflow re-runs the seed whenever a change to `data/` lands on `main`, so merged games appear without a manual step. It reads `SUPABASE_URL` and `SUPABASE_KEY` from the `catalog-seed` environment's secrets (Settings → Environments), which only the `main` branch can use. You can also start it by hand from the Actions tab.
 
 ## Project structure
@@ -91,7 +93,7 @@ data/
   developers/          One JSON file per studio
 scripts/
   check_catalog.py     Validates the catalog (runs on every pull request)
-  seed.py              Loads the catalog into Supabase (safe to re-run)
+  seed.py              Loads the catalog into Supabase (safe to re-run; --demo adds sample users)
 supabase/schema.sql    Tables, views, purchase function and security rules
 templates/             Jinja templates
 static/                CSS, JavaScript and images
