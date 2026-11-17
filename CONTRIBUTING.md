@@ -15,7 +15,7 @@ Not sure where to start? Look for issues labelled `good first issue`, or pick a 
 
 **Catalog changes need no setup.** You don't need Python, a database or any keys to add or fix games. You can do it all on the GitHub website (see [Editing in your browser](#editing-in-your-browser)).
 
-**Code changes** (features, bug fixes, UI) need the app running. Follow [Getting started](README.md#getting-started) in the README. You need your own free Supabase project: run `supabase/schema.sql` in its SQL editor, then load the catalog with `python -m scripts.seed`. It takes about five minutes.
+**Code changes** (features, bug fixes, UI) need the app running. Follow [Getting started](README.md#getting-started) in the README. You need your own free Supabase project: run `supabase/schema.sql` in its SQL editor, then load the catalog with `python -m scripts.seed`. It takes about five minutes. Add `--demo` to also get sample accounts that already own and review games (see the README).
 
 ## Editing in your browser
 
